@@ -3,12 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <title>Dice Roller</title>
+	<link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 	<style>
 		
     </style>
 </head>
-<body>
-	<h1>Dice Roller</h1>
-	
+<body onload="rollDice()">
+	<header><h1>Dice Roller</h1></header>
+    <p>This is an application that rolls the dice for the game Yatzee. Press the button and you will get 5 random six-sided rolled dice.</p>
+	<button type="button" autofocus onclick="rollDice()">Roll Dice</button><br><br>
+    Dice1: <input id="dice1" type="text" value="" size="5" disabled><br>
+    Dice2: <input id="dice2" type="text" value="" size="5" disabled><br>
+    Dice3: <input id="dice3" type="text" value="" size="5" disabled><br>
+    Dice4: <input id="dice4" type="text" value="" size="5" disabled><br>
+    Dice5: <input id="dice5" type="text" value="" size="5" disabled>
 </body>
 </html>
